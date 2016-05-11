@@ -36,9 +36,12 @@ public class TermCounter {
 	 * @return
 	 */
 	public int size() {
-        // TODO: fill this in.
-		return -1;
-	}
+        Integer count =0;
+        for (String key: keySet()) {
+            count+= get(key);
+        }
+        return count;
+    }
 
 	/**
 	 * Takes a collection of Elements and counts their words.
